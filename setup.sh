@@ -14,7 +14,8 @@ chmod +x install-code.sh
 curl https://get.docker.com | sudo bash
 sudo gpasswd -a student docker
 sudo apt-get update
-sudo apt-get install -y less groff unzip python3 python3-pip python3-venv
+# install common dependencies
+sudo apt-get install -y git less groff unzip python3 python3-pip python3-venv
 sudo apt-add-repository -y ppa:ansible/ansible
 sudo apt-get update
 sudo apt-get install -y ansible
