@@ -19,4 +19,4 @@ ansible-galaxy collection install amazon.aws
 curl -fsSL https://awscli.amazonaws.com/v2/install.sh | bash
 curl -fsSL https://antigravity.google/cli/install.sh | bash
 echo "export PATH=$PATH:$HOME/.local/bin" | tee -a $HOME/.bashrc
-sudo apt-get install -y postgresql-client-18
+sudo apt-get install -y postgresql-client
