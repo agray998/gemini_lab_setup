@@ -10,10 +10,11 @@ EOF
 
 chmod +x install-code.sh
 . install-code.sh
+sudo apt-get update
 sudo apt-get install -y less groff unzip python3 python3-pip python3-venv
 sudo apt-add-repository -y ppa:ansible/ansible
 sudo apt-get update
-sudo apt-get install ansible
+sudo apt-get install -y ansible
 ansible-galaxy collection install amazon.aws
 curl -fsSL https://awscli.amazonaws.com/v2/install.sh | bash
 curl -fsSL https://antigravity.google/cli/install.sh | bash
